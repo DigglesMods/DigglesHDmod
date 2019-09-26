@@ -58,6 +58,19 @@
 				"en" : "Add high resolution ground textures",
 				"de" : "Hochauflösende Bodentexturen hinzufügen"
 			}
+		},
+		{
+			"id" : "SUPER_HD",
+			"type" : "bool",
+			"default" : true,
+			"name" :  {
+				"en" : "Super HD",
+				"de" : "Super HD"
+			},
+			"description" : {
+				"en" : "Add some super high resolution textures",
+				"de" : "Einige super-hochauflösende Texturen hinzufügen"
+			}
 		}
 	],
 	
@@ -78,6 +91,15 @@
 				"type" : "variable",
 				"id" : "LANGUAGE",
 				"value" : "ru"
+			}
+		},
+		{
+			"type" : "data",
+			"path" : "Data_superHD",
+			"condition" : {
+				"type" : "variable",
+				"id" : "SUPER_HD",
+				"value" : true
 			}
 		},
 		{
