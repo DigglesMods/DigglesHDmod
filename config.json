@@ -1,5 +1,5 @@
 {
-	"version" : "0.1",
+	"version" : "0.2",
 	"author" : "ZarfaZ",
 	
 	"name" :  {
@@ -20,7 +20,7 @@
 		{
 			"id" : "LANGUAGE",
 			"type" : "select",
-			"default" : "ru",
+			"default" : "en",
 			"name" :  {
 				"en" : "Language",
 				"de" : "Sprache"
@@ -35,6 +35,13 @@
 					"name" : {
 						"en" : "German",
 						"de" : "Deutsch"
+					}
+				},
+				{
+					"value" : "en",
+					"name" : {
+						"en" : "English",
+						"de" : "Englisch"
 					}
 				},
 				{
@@ -82,6 +89,15 @@
 				"type" : "variable",
 				"id" : "LANGUAGE",
 				"value" : "de"
+			}
+		},
+		{
+			"type" : "data",
+			"path" : "Data_en",
+			"condition" : {
+				"type" : "variable",
+				"id" : "LANGUAGE",
+				"value" : "en"
 			}
 		},
 		{
